@@ -2,13 +2,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class BotonIniciar : MonoBehaviour
+public class CambiarEscena : MonoBehaviour
 {
-    public Button botonIniciar;
 
     public string nombreEscena;
 
-    public void IniciarJuego()
+    public void SwapScene()
     {
         SceneManager.LoadScene(nombreEscena);
     }
